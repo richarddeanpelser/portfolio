@@ -19,7 +19,9 @@
         <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
     </div>
 </header>
+
 {% block content %}
+{% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
 {% block portfolio %} {% include 'portfolio.html' %} {% endblock portfolio %}
 {% block about %} {% include 'about.html' %} {% endblock about %}
 {% block contact %} {% include 'contact.html' %} {% endblock contact %}

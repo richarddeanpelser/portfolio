@@ -16,7 +16,7 @@ class ProjectList(generic.ListView):
     """
     Return all Projects that are with status 1 (published) and order from the latest one.
     """
-    queryset = Project.objects.filter(status=1).order_by('-created_at')
+    queryset = Project.objects.filter(status=1).order_by('period')
     template_name = 'index.html'
 
 
