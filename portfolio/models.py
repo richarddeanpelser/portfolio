@@ -28,6 +28,7 @@ class Project(models.Model):
     title = models.CharField(max_length=200)
     thumbnail = models.ImageField(null=True)
     body = RichTextUploadingField()
+    project_url = models.URLField(null=True, blank=True)
     slug = models.SlugField(null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     id = models.UUIDField(default=uuid.uuid4,  unique=True,
