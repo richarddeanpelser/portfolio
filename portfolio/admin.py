@@ -1,9 +1,8 @@
 from django.contrib import admin
-from .models import Company, Project, Role
+from .models import *
 
 
-class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('title', 'slug', 'status',)
-    list_filter = ('status',)
-    search_fields = ('title', 'content',)
-    
+admin.site.register(Project)
+admin.site.register(Skill)
+admin.site.register(Tag)
+admin.site.register(Role)
