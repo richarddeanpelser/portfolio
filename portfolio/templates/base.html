@@ -1,3 +1,4 @@
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -28,18 +29,21 @@
 
 <body id="page-top">
     {% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
-
+    
     {% block content %}
+    
+
+
     
     {% endblock content %}
 
-    <footer class="footer text-center">
-        <!-- Copyright Section-->
-        {% block footer %} {% include 'footer.html' %} {% endblock footer %}
-    </footer>
+ 
  
 </body>
 <!-- Footer-->
-
+<footer class="footer text-center">
+    <!-- Copyright Section-->
+    {% block footer %} {% include 'footer.html' %} {% endblock footer %}
+</footer>
 <!-- Footer-->
 </html>
