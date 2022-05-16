@@ -7,6 +7,7 @@ urlpatterns = [
     path('', views.home_page, name="home"),
     path('projects/', views.project_page, name="project_page"),
     path('project/<str:pk>/', views.project_details, name="project"),
+    path('workhistory/', views.work_history_page, name="work_history_page"),
     # path('roles/<str:pk>/', views.roles_page, name="roles_page"),
 
 #     path('add-project/', views.addProject, name="add-project"),

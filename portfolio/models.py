@@ -17,8 +17,8 @@ PROJECT_STATUS = (
 class Role(models.Model):
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True)
-    Organisation = models.CharField(max_length=100, unique=True)
-    # user = models.ForeignKey(User, on_delete=models.CASCADE)
+    organisation = models.CharField(max_length=100, unique=True)
+    body = RichTextUploadingField(null = True, blank=True)
     status = models.IntegerField(choices=ROLE_STATUS, default=0)
 
     def __str__(self):
