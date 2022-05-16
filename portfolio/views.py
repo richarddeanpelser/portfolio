@@ -15,7 +15,7 @@ def home_page(request):
 
     context = {'projects': projects, 'skills': skills,
                'detailed_skills': detailed_skills}
-    return render(request, 'home.html', context)
+    return render(request, 'shome.html', context)
 
 def project_page(request):
     projects = Project.objects.all()
