@@ -43,3 +43,6 @@ def work_history_page(request):
 
     context = {'roles': roles}
     return render(request, 'workhistory.html', context)
+
+def about_page(request):
+    return render(request, 'about.html')
