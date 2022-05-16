@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ca*b#v4gmih=ypua4o9(#7)$ojw)t3xxzokyekic7ptae%=uyi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['litchiportfolio.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
