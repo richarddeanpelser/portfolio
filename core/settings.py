@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ca*b#v4gmih=ypua4o9(#7)$ojw)t3xxzokyekic7ptae%=uyi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['litchiportfolio.herokuapp.com','localhost','127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -121,14 +121,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-STATIC_ROOT = 'static'
-STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = 'static/'
 
 #STATIC_ROOT = os.path.join(BASE_DIR, 'templates')
 STATICFILES_DIRS = [
     BASE_DIR / 'portfolio/templates/',
 ]
-MEDIA_ROOT = os.path.join(BASE_DIR, 'portfolio/static/images')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 # Default primary key field type
