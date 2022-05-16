@@ -1,10 +1,13 @@
 from . import views
 from django.urls import path
 
+
+
 urlpatterns = [
     path('', views.home_page, name="home"),
     path('projects/', views.project_page, name="project_page"),
     path('project/<str:pk>/', views.project_details, name="project"),
+    # path('roles/<str:pk>/', views.roles_page, name="roles_page"),
 
 #     path('add-project/', views.addProject, name="add-project"),
 #     path('edit-project/<str:pk>/', views.editProject, name="edit-project"),
